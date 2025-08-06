@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Theta Tau SJSU Website
+
+This repository contains the source for Theta Tau's San José State University chapter website. The app is built with **Next.js**, **TypeScript**, and **Tailwind CSS**, providing a modern and responsive experience.
+
+## Features
+
+- Next.js 15 App Router with TypeScript for type-safe development
+- Tailwind CSS v4 for utility-first styling
+- Modular React components for navigation, carousels, and content sections
+- Static JSON data for active members and career resources
+- Optimized assets served from the `public/` directory
+
+## 🛠️ Pre-TODO: Project Setup Tasks
+
+These are the initial technical goals before adding full user-facing features:
+
+- [ ] 🔧 Clean up `/src` folder structure (remove unused boilerplate)
+- [ ] 📦 Integrate Supabase client and environment variables
+- [ ] 🔐 Set up basic Supabase auth with roles (e.g., rushee, active)
+- [ ] 🧪 Create a test page to validate Supabase DB connection
+- [x] 🗂️ Organize `components/`, `lib/`, and `types/` folders
+- [x] 📘 Replace default Next.js README with custom project documentation
+- [ ] ✍️ Create `CONTRIBUTING.md` for team or future contributors
+- [ ] 🧼 Add `.env.example` to document required secrets/config
+- [ ] 🚀 Deploy initial version to Vercel for preview testing
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18.17 or newer
+- npm 10 or newer (or an alternative package manager)
+
+### Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-org/sjsu-seo-tt-website.git
+cd sjsu-seo-tt-website
+npm install
+```
+
+### Development
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+TODO ... Finish this section ... vercel deployment instructions
 
-## Learn More
+### Linting
 
-To learn more about Next.js, take a look at the following resources:
+Check the codebase with ESLint:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+or just use prettier, which comes with standard syntax guidelines for typescript.
 
-## Deploy on Vercel
+## Folder Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```txt
+sjsu-seo-tt-website/
+├── public/                # Static assets
+│   ├── images/
+│   ├── headshots/
+│   └── companies/
+├── src/
+│   ├── app/               # Application routes
+│   │   ├── FAQ/page.tsx
+│   │   ├── brothers/page.tsx
+│   │   ├── careers/page.tsx
+│   │   ├── rush/page.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── components/
+│       ├── Navbar.tsx
+│       ├── Footer.tsx
+│       ├── Carousel.tsx
+│       ├── BrotherCard.tsx
+│       ├── OfficerCard.tsx
+│       ├── ValueCard.tsx
+│       ├── CompanyLogoDisplay.tsx
+│       └── activeInfo/
+│           ├── roster.json
+│           ├── careers.json
+│           └── alumni.json
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+└── README.md
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contributing
+
+1. Create a feature branch:
+
+    ```bash
+    git checkout -b feature/your-feature
+    ```
+
+2. Install dependencies and make your changes.
+3. Run `npm run lint` and ensure the project builds.
+4. Commit with clear messages and open a pull request describing your changes.
+
+## License
+
+This project does not currently specify a license. If you plan to use this code, please contact the maintainers.
