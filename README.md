@@ -107,7 +107,7 @@ sjsu-seo-tt-website/
 1. Create a feature branch:
 
     ```bash
-    git checkout -b feature/your-feature
+    git checkout -b name/your-feature
     ```
 
 2. Install dependencies and make your changes.
