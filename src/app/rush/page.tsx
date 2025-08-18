@@ -281,19 +281,6 @@ export default function RushPage() {
                                 Time and Location TBD
                                 </p>
                             </VerticalTimelineElement>
-                            <VerticalTimelineElement
-                                className="vertical-timeline-element--work"
-                                contentStyle={{ background: "#18181a", color: "#e4e4e4", borderTop: "4px solid #fecb33" }}
-                                contentArrowStyle={{ borderRight: "7px solid #18181a" }}
-                                iconStyle={{ background: "#fecb33", color: "#18181a" }}
-                            >
-                                <h3 className="vertical-timeline-element-title font-bold text-lg">Invite Only</h3>
-                                <h4 className='italic'>September 6th, 2025</h4>
-                                <p>
-                                TBD.<br />
-                                Time and Location TBD
-                                </p>
-                            </VerticalTimelineElement>
                     </VerticalTimeline>
                 </div>
             </section>
