@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import logo from "../../public/images/logo.png";
 import { useRouter, usePathname } from "next/navigation";
+import { useAuth } from "@/contexts/AuthContext";
+import LogoutButton from "./LogoutButton";
 
 const NAV_ITEMS = ["about","brothers","rush","FAQ","careers"];
 
@@ -13,6 +15,7 @@ const Navbar: React.FC = () => {
   const [showNav, setShowNav] = useState(true);
   const pathname = usePathname();
   const router = useRouter();
+  const { user, isLoading } = useAuth();
 
   // toggle mobile menu
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -74,7 +77,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* Desktop menu */}
-        <ul className="hidden md:flex space-x-6 text-white">
+        <ul className="hidden md:flex space-x-6 text-white items-center">
           {NAV_ITEMS.map((path) => {
             if (path === "about") {
               return (
@@ -98,7 +101,17 @@ const Navbar: React.FC = () => {
               </li>
             );
           })}
-
+          {!isLoading && (
+            <li>
+              {user ? (
+                <LogoutButton />
+              ) : (
+                <Link href="/login" className="px-4 py-2 bg-[#fecb33] text-[#141416] font-semibold rounded-lg hover:bg-yellow-400 transition-colors">
+                  Login
+                </Link>
+              )}
+            </li>
+          )}
         </ul>
 
         {/* Mobile hamburger */}
@@ -137,7 +150,17 @@ const Navbar: React.FC = () => {
                     </li>
                   );
                 })}
-
+                {!isLoading && (
+                  <li>
+                    {user ? (
+                      <LogoutButton />
+                    ) : (
+                      <Link href="/login" className="px-4 py-2 bg-[#fecb33] text-[#141416] font-semibold rounded-lg hover:bg-yellow-400 transition-colors">
+                        Login
+                      </Link>
+                    )}
+                  </li>
+                )}
               </ul>
             </div>
           </>

@@ -14,6 +14,8 @@ export const metadata: Metadata = {
   description: "Created by Theta Tau Actives!",
 };
 
+import { AuthProvider } from "@/contexts/AuthContext";
+
 export default function RootLayout({
   children,
 }: {
@@ -23,11 +25,13 @@ export default function RootLayout({
     <html lang="en">
       {/* Next.js will automatically inject your <head> elements here */}
       <body className={`${geistSans.variable} font-sans antialiased`}>
-        <Navbar />
-        <main style={{ paddingTop: 'var(--navbar-height)' }}>
-          {children}
-        </main>
-        <Footer />
+        <AuthProvider>
+          <Navbar />
+          <main style={{ paddingTop: 'var(--navbar-height)' }}>
+            {children}
+          </main>
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
