@@ -21,8 +21,8 @@ This repository contains the source for Theta Tau's San José State University c
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-org/sjsu-seo-tt-website.git
-cd sjsu-seo-tt-website
+git clone https://github.com/Theta-Tau-SJSU-Software/sjsuttwebsite.git
+cd sjsuttwebsite
 npm install
 ```
 
