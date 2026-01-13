@@ -18,17 +18,19 @@ export default function RegisterPage() {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
+  // useState objects for showing/hiding password characters
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
   const [pwFocused, setPwFocused] = useState(false);
   const [cpwFocused, setCpwFocused] = useState(false);
-
+  
+  // reference to keep cursor at the end of the password when toggling show/hide
   const passwordRef = useRef<HTMLInputElement | null>(null);
   const confirmRef = useRef<HTMLInputElement | null>(null);
-
   const pwSelectionRef = useRef<{ start: number; end: number } | null>(null);
   const cpwSelectionRef = useRef<{ start: number; end: number } | null>(null);
 
+  // helper function to keep cursor at end of password when toggling show/hide
   const toggleWithCaret = (
     inputRef: React.RefObject<HTMLInputElement | null>,
     selectionRef: React.RefObject<{ start: number; end: number } | null>,
@@ -37,6 +39,7 @@ export default function RegisterPage() {
     const el = inputRef.current;
     if (!el) return;
 
+    // saves selection reference before toggling
     selectionRef.current = {
       start: el.selectionStart ?? el.value.length,
       end: el.selectionEnd ?? el.value.length,
@@ -44,6 +47,7 @@ export default function RegisterPage() {
 
     setShow(v => !v);
 
+    // restores selection reference after toggling
     requestAnimationFrame(() => {
       const node = inputRef.current;
       const sel = selectionRef.current;
@@ -61,10 +65,14 @@ export default function RegisterPage() {
     }));
   };
 
+  // keeps only digits for phone input
   const toDigits10 = (s: string) => s.replace(/\D/g, "").slice(0, 10);
+
+  // reference to skip cursor past dash ('-') when deleting phone input
   const phoneInputRef = useRef<HTMLInputElement | null>(null);
   const nextCaretPosRef = useRef<number | null>(null);
 
+  // formats partial inputs e.g: 1, 12, 123, 123-4, 123-456, etc...
   const formatUSPhonePartial = (digits: string) => {
     const a = digits.slice(0, 3);
     const b = digits.slice(3, 6);
@@ -75,12 +83,15 @@ export default function RegisterPage() {
     return `${a}-${b}-${c}`;
   };
 
+  // given the number of digits before the caret, return the caret index in formatted string
   const caretIndexFromDigitCount = (digitCount: number) => {
+    // after 3 digits insert 1 dash, 6 digits 2 dashes
     if (digitCount <= 3) return digitCount;
     if (digitCount <= 6) return digitCount + 1;
     return digitCount + 2;
   }
 
+  // to keep track of number of digits before a given caret in a formatted string
   const digitCountBeforeCaret = (value: string, caret: number) => 
     value.slice(0, caret).replace(/\D/g,"").length;
 
@@ -109,6 +120,7 @@ export default function RegisterPage() {
 
     if (e.key !== "Backspace" && e.key !== "Delete") return;
 
+    // checks if caret is at a dash when hitting backspace/delete --> delete a digit instead
     const isDash = (idx: number) => value[idx] === "-";
 
     if (e.key == "Backspace" && start > 0 && isDash(start - 1)) {
@@ -141,7 +153,8 @@ export default function RegisterPage() {
       return;
     }
   }
-
+  
+  // useEffect function to rerender phone data properly
   useEffect(() => {
     const pos = nextCaretPosRef.current;
     const el = phoneInputRef.current;
