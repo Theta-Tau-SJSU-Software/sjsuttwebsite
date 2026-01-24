@@ -1,10 +1,9 @@
 'use client';
 
-import { supabase } from '@/lib/supabase';
-import { useRouter } from 'next/navigation';
+import { createClient } from '@/lib/supabase/client';
 
 export default function LoginPage() {
-  const router = useRouter();
+  const supabase = createClient();
 
   const handleGoogleSignIn = async () => {
     const { error } = await supabase.auth.signInWithOAuth({

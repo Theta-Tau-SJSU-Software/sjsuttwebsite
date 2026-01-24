@@ -8,14 +8,8 @@ export type Json =
 
 export interface Database {
   public: {
-    Tables: {
-      // Add your tables here
-    }
-    Views: {
-      // Add your views here
-    }
-    Functions: {
-      // Add your functions here
-    }
+    Tables: Record<string, never>
+    Views: Record<string, never>
+    Functions: Record<string, never>
   }
 }
