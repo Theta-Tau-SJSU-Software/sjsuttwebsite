@@ -8,7 +8,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { useAuth } from "@/contexts/AuthContext";
 import LogoutButton from "./LogoutButton";
 
-const NAV_ITEMS = ["about","brothers","rush","FAQ","careers"];
+const NAV_ITEMS = ["about", "brothers", "rush", "FAQ", "careers", "sponsorship"];
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);

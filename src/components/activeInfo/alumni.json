@@ -1,0 +1,28 @@
+{
+    "alumni": [
+        {
+            "name": "Nyun Ei Hlaing",
+            "major": "Software Engineering",
+            "class": "Eta",
+            "image": "/headshots/no_photo_available.jpg"
+        },
+        {
+            "name": "Dylan Subijano",
+            "major": "Civil Engineering",
+            "class": "Eta",
+            "image": "/headshots/no_photo_available.jpg"
+        },
+        {
+            "name": "Anwar Mujeeb",
+            "major": "Software Engineering",
+            "class": "Theta",
+            "image": "/headshots/no_photo_available.jpg"
+        },
+        {
+            "name": "Rohith Iyengar",
+            "major": "Computer Science",
+            "class": "Theta",
+            "image": "/headshots/no_photo_available.jpg"
+        }
+    ]
+}

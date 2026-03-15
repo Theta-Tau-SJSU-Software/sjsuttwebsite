@@ -1,0 +1,358 @@
+{
+  "executive": [
+    {
+      "name": "Huy Duong",
+      "role": "Regent",
+      "image": "./headshots/huy_duong.jpg",
+      "major": "Computer Science",
+      "class": "Kappa"
+    },
+    {
+      "name": "Vivek Bhakta",
+      "role": "Vice Regent",
+      "image": "./headshots/vivek_bhakta.jpg",
+      "major": "Manufacturing Systems",
+      "class": "Mu"
+    },
+    {
+      "name": "Logan Lei-Chong",
+      "role": "Scribe",
+      "image": "./headshots/logan_lei-chong.jpg",
+      "major": "Mechanical Engineering",
+      "class": "Lambda"
+    },
+    {
+      "name": "Drew Tom",
+      "role": "Treasurer",
+      "image": "./headshots/drew_tom.jpg",
+      "major": "Computer Network Systems Management",
+      "class": "Iota"
+    },
+    {
+      "name": "Manan Upadhyay",
+      "role": "Corresponding Secretary",
+      "image": "./headshots/manan_upadhyay.jpg",
+      "major": "Industrial & Systems Engineering",
+      "class": "Iota"
+    },
+    {
+      "name": "Bradley Okajima",
+      "role": "Risk + Professional Chair",
+      "image": "./headshots/bradley_okajima.jpg",
+      "major": "Industrial & Systems Engineering",
+      "class": "Eta"
+    }
+  ],
+  "chairs": [
+    {
+      "name": "Alex Dang",
+      "role": "New Member Educator",
+      "image": "./headshots/alex_dang.jpg",
+      "major": "Civil Engineering",
+      "class": "Kappa"
+    },
+    {
+      "name": "Helena Teung-Ouk",
+      "role": "New Member Educator",
+      "image": "./headshots/helena_teung-ouk.jpg",
+      "major": "Mechanical Engineering",
+      "class": "Kappa"
+    },
+    {
+      "name": "Kelani Dolan",
+      "role": "Rush Co-Chair",
+      "image": "./headshots/kelani_dolan.jpg",
+      "major": "Software Engineering",
+      "class": "Lambda"
+    },
+    {
+      "name": "Stephannie Jimenez Tejeda",
+      "role": "Rush Co-Chair",
+      "image": "./headshots/stephannie_tejeda.jpg",
+      "major": "Packaging Science",
+      "class": "Mu"
+    },
+    {
+      "name": "Hari Kotamsetti",
+      "role": "Webmaster",
+      "image": "./headshots/hari_kotamsetti.jpg",
+      "major": "Computer Engineering",
+      "class": "Kappa"
+    },
+    {
+      "name": "Alan Wang",
+      "role": "Webmaster",
+      "image": "./headshots/alan_wang.jpg",
+      "major": "Computer Science",
+      "class": "Iota"
+    },
+    {
+      "name": "Joshua Hsieh",
+      "role": "Webmaster",
+      "image": "./headshots/joshua_hsieh.jpg",
+      "major": "Software Engineering",
+      "class": "Kappa"
+    },
+    {
+      "name": "Jomi Arockiasamy",
+      "role": "Community Service Chair",
+      "image": "./headshots/jomi_arockiasamy.jpg",
+      "major": "Data Science",
+      "class": "Mu"
+    },
+    {
+      "name": "Arsh Shergill",
+      "role": "Professional Co-Chair",
+      "image": "./headshots/arsh_shergill.jpg",
+      "major": "Electrical Engineering",
+      "class": "Lambda"
+    },
+    {
+      "name": "Kenny Li",
+      "role": "Fundraising Chair",
+      "image": "./headshots/kenny_li.jpg",
+      "major": "Computer Science",
+      "class": "Lambda"
+    },
+    {
+      "name": "Rachel Tran",
+      "role": "Brotherhood Co-Chair",
+      "image": "./headshots/rachel_tran.jpg",
+      "major": "Software Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "Olivia Huerta",
+      "role": "Brotherhood Co-Chair",
+      "image": "./headshots/olivia_huerta.jpg",
+      "major": "Biomedical Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "Yenyi Chen",
+      "role": "Merch Coordinator",
+      "image": "./headshots/yenyi_chen.jpg",
+      "major": "Aerospace Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "Darrius Robertson",
+      "role": "Special Events Coordinator",
+      "image": "./headshots/darrius_robertson.jpg",
+      "major": "Engineering Technology",
+      "class": "Mu"
+    },
+    {
+      "name": "Kyle Chu",
+      "role": "Software Technical Co-Chair",
+      "image": "./headshots/kyle_chu.jpg",
+      "major": "Software Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "Kevin Tsoi",
+      "role": "Software Technical Co-Chair",
+      "image": "./headshots/kevin_tsoi.jpg",
+      "major": "Computer Science",
+      "class": "Mu"
+    },
+    {
+      "name": "Kaito Kermabon",
+      "role": "Hardware Technical Chair",
+      "image": "./headshots/kaito_kermabon.jpg",
+      "major": "Aerospace Engineering",
+      "class": "Lambda"
+    },
+    {
+      "name": "Kylie Lam",
+      "role": "Historian",
+      "image": "./headshots/kylie_lam.jpg",
+      "major": "Packaging Science",
+      "class": "Kappa"
+    },
+    {
+      "name": "Kayla Nguyen",
+      "role": "Historian",
+      "image": "./headshots/kayla_nguyen.jpg",
+      "major": "Biomedical Engineering",
+      "class": "Mu"
+    }
+  ],
+  "actives": [
+    {
+      "name": "Aishni Balaji",
+      "image": "./headshots/aishni_balaji.jpg",
+      "major": "Computer Science",
+      "class": "Mu"
+    },
+    {
+      "name": "Athish Kumar",
+      "image": "./headshots/athish_kumar.jpg",
+      "major": "Data Science",
+      "class": "Kappa"
+    },
+    {
+      "name": "Brian Shih",
+      "image": "./headshots/brian_shih.jpg",
+      "major": "Computer Science",
+      "class": "Mu"
+    },
+    {
+      "name": "Erik Cheng",
+      "image": "./headshots/erik_cheng.jpg",
+      "major": "Electrical Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "Ethan Nguyen",
+      "image": "./headshots/ethan_nguyen.jpg",
+      "major": "Engineering Technology",
+      "class": "Iota"
+    },
+    {
+      "name": "Gibson Sacramento",
+      "image": "./headshots/gibson_sacramento.jpg",
+      "hoverImage": "./headshots/gibson_sacramento_roar.jpg",
+      "major": "Applied Mathematics",
+      "class": "Eta"
+    },
+    {
+      "name": "Jacky Zhuang",
+      "image": "./headshots/jacky_zhuang.jpg",
+      "major": "Manufacturing Systems",
+      "class": "Theta"
+    },
+    {
+      "name": "Jaden Phan",
+      "image": "./headshots/jaden_phan.jpg",
+      "major": "Electrical Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "James Kim",
+      "image": "./headshots/james_kim.jpg",
+      "major": "Software Engineering",
+      "class": "Iota"
+    },
+    {
+      "name": "Janelle Bautista",
+      "image": "./headshots/janelle_bautista.jpg",
+      "major": "Packaging Science",
+      "class": "Iota"
+    },
+    {
+      "name": "Justin Doan",
+      "image": "./headshots/justin_doan.jpg",
+      "major": "Electrical Engineering",
+      "class": "Iota"
+    },
+    {
+      "name": "Lac-Phong Nguyen",
+      "image": "./headshots/lac-phong_nguyen.jpg",
+      "major": "Software Engineering",
+      "class": "Iota"
+    },
+    {
+      "name": "Logan Gee",
+      "image": "./headshots/logan_gee.jpg",
+      "major": "Mechanical Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "Mahek Kothari",
+      "image": "./headshots/mahek_kothari.jpg",
+      "major": "Data Science",
+      "class": "Kappa"
+    },
+    {
+      "name": "Marvin Zhai",
+      "image": "./headshots/marvin_zhai.jpg",
+      "major": "Computer Science",
+      "class": "Mu"
+    },
+    {
+      "name": "Mercy Kim",
+      "image": "./headshots/mercy_kim.jpg",
+      "major": "Data Science",
+      "class": "Mu"
+    },
+    {
+      "name": "Michael Hamaty",
+      "image": "./headshots/michael_hamaty.jpg",
+      "major": "Data Science",
+      "class": "Kappa"
+    },
+    {
+      "name": "Michael Huh",
+      "image": "./headshots/michael_huh.jpg",
+      "major": "Computer Science",
+      "class": "Eta"
+    },
+    {
+      "name": "MJ Dilig",
+      "image": "./headshots/mj_dilig.jpg",
+      "major": "Computer Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "Natalie Tran",
+      "image": "./headshots/natalie_tran.jpg",
+      "major": "Software Engineering",
+      "class": "Kappa"
+    },
+    {
+      "name": "Noah Bonifacio",
+      "image": "./headshots/noah_bonifacio.jpg",
+      "major": "Electrical Engineering",
+      "class": "Kappa"
+    },
+    {
+      "name": "Owen Hall",
+      "image": "./headshots/owen_hall.jpg",
+      "major": "Computer Science",
+      "class": "Lambda"
+    },
+    {
+      "name": "Raven Libunao",
+      "image": "./headshots/raven_libunao.jpg",
+      "major": "Civil Engineering",
+      "class": "Lambda"
+    },
+    {
+      "name": "Sachi Kelkar",
+      "image": "./headshots/sachi_kelkar.jpg",
+      "major": "Computer Engineering",
+      "class": "Kappa"
+    },
+    {
+      "name": "Sohum Tiwary",
+      "image": "./headshots/sohum_tiwary.jpg",
+      "major": "Computer Engineering",
+      "class": "Theta"
+    },
+    {
+      "name": "Stefan Le",
+      "image": "./headshots/stefan_le.jpg",
+      "major": "Computer Science & Linguistics",
+      "class": "Iota"
+    },
+    {
+      "name": "Timmy Chen",
+      "image": "./headshots/timmy_chen.jpg",
+      "major": "Data Science",
+      "class": "Kappa"
+    },
+    {
+      "name": "Victor Tran",
+      "image": "./headshots/victor_tran.jpg",
+      "major": "Electrical Engineering",
+      "class": "Mu"
+    },
+    {
+      "name": "Wesley Huang",
+      "image": "./headshots/wesley_huang.jpg",
+      "major": "Civil Engineering",
+      "class": "Theta"
+    }
+  ]
+}
