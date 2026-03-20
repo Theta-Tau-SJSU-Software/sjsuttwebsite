@@ -73,9 +73,10 @@ const Navbar: React.FC = () => {
           </div>
         </Link>
 
-        {/* Desktop menu */}
-        <ul className="hidden md:flex space-x-6 text-white">
-          {NAV_ITEMS.map((path) => {
+        <div className="flex items-center space-x-4 md:space-x-6">
+          {/* Desktop menu */}
+          <ul className="hidden md:flex items-center space-x-6 text-white">
+            {NAV_ITEMS.map((path) => {
             if (path === "about") {
               return (
                 <li key="about">
@@ -108,14 +109,23 @@ const Navbar: React.FC = () => {
           </li>
         </ul>
 
+        {/* Login Icon */}
+        <Link href="/login" className="text-white hover:text-[#fecb33] transition-colors" title="Member Login">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </Link>
+
         {/* Mobile hamburger */}
         <button onClick={toggleMenu} className="md:hidden p-2">
           <span className="block w-6 h-0.5 bg-white mb-1" />
           <span className="block w-6 h-0.5 bg-white mb-1" />
           <span className="block w-6 h-0.5 bg-white" />
         </button>
+      </div>
 
-        {/* Mobile menu overlay */}
+      {/* Mobile menu overlay */}
         {menuOpen && (
           <>
             <div className="fixed inset-0 bg-black/50 z-40" onClick={toggleMenu} />
@@ -145,8 +155,17 @@ const Navbar: React.FC = () => {
                   );
                 })}
                 <li>
-                  <Link href="#" className="px-4 py-2 bg-[#e2e8f0] text-[#94a3b8] rounded-full pointer-events-none cursor-not-allowed">
+                  <Link href="#" className="px-4 py-2 inline-block bg-[#e2e8f0] text-[#94a3b8] rounded-full pointer-events-none cursor-not-allowed mb-2">
                     Apply
+                  </Link>
+                </li>
+                <li className="pt-4 border-t border-gray-700">
+                  <Link href="/login" onClick={() => setMenuOpen(false)} className="flex items-center space-x-3 text-white hover:text-[#fecb33]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                      <circle cx="12" cy="7" r="4"/>
+                    </svg>
+                    <span>Member Login</span>
                   </Link>
                 </li>
               </ul>
